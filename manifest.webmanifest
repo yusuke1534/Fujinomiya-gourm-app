@@ -1,0 +1,1 @@
+{"name":"富士宮グルメマップ","short_name":"富士宮グルメ","description":"富士宮やきそばと富士宮プリンのお店探し","start_url":"./index.html","scope":"./","display":"standalone","background_color":"#e5f5ff","theme_color":"#07538a","icons":[{"src":"assets/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}]}
