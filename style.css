@@ -30,3 +30,9 @@ body:has(#home.active) #app{background:linear-gradient(#b7e5ff,#eaf7ff)}
 #home .quick{margin:16px 12px}
 #home .banner{width:calc(100% - 24px);margin-left:12px;margin-right:12px;border:0!important;outline:0!important;box-shadow:0 4px 10px #174b6d28}
 @media(min-width:650px){#home .hero{aspect-ratio:2.15/1}}
+
+/* v7: hero fills its whole tall area; eliminate blue letterbox bars. */
+#home .hero {height:auto!important;aspect-ratio:1.75 / 1!important;background-size:100% 100%!important;background-position:center!important;background-color:transparent!important;border-radius:0 0 20px 20px!important;}
+/* one clean border, no border baked into the images */
+#home .food {border:2px solid #fff!important;outline:none!important;box-shadow:0 5px 12px #154b6a35!important;background-size:100% 100%!important;border-radius:19px!important;}
+#home .foodgrid {margin-top:14px!important;}
