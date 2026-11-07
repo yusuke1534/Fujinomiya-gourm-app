@@ -19,4 +19,4 @@ function addStore(){let name=document.getElementById('storeName').value.trim(),a
 function saveStores(){localStorage.setItem('fujistores',JSON.stringify(stores))}
 function exportStores(){let blob=new Blob([JSON.stringify(stores,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='fujinomiya-stores.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 async function importStores(e){let f=e.target.files?.[0];if(!f)return;try{let a=JSON.parse(await f.text());if(!Array.isArray(a)||!a.every(s=>s.name&&s.type&&s.address)){throw Error('形式が違います')}stores=a.map((s,i)=>({...s,id:String(s.id||'import-'+i)}));saveStores();alert(`${stores.length}件を読み込みました`);navigate('search')}catch(err){alert('JSONの読み込みに失敗しました: '+err.message)}}
-if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}
