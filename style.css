@@ -36,3 +36,9 @@ body:has(#home.active) #app{background:linear-gradient(#b7e5ff,#eaf7ff)}
 /* one clean border, no border baked into the images */
 #home .food {border:2px solid #fff!important;outline:none!important;box-shadow:0 5px 12px #154b6a35!important;background-size:100% 100%!important;border-radius:19px!important;}
 #home .foodgrid {margin-top:14px!important;}
+
+/* v8: maintain the natural proportions of the mountain, app logo and map pin. */
+#home .hero{background-image:url('hero-v8.jpg')!important;aspect-ratio:7 / 4!important;background-size:100% 100%!important;}
+#home .food{border:0!important;outline:0!important;}
+.storeCard .description{line-height:1.65;white-space:pre-wrap;color:#27435b}
+.storeCard .meta{font-size:12px;color:#61798b}
