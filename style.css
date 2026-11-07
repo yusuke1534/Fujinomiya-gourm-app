@@ -45,3 +45,6 @@ body:has(#home.active) #app{background:linear-gradient(#b7e5ff,#eaf7ff)}
 
 /* v9: full-height impactful banner, with corrected natural-proportion icon artwork */
 #home .hero{background-image:url("hero-v9.jpg")!important;aspect-ratio:7 / 4!important;background-size:100% 100%!important;}
+
+/* v11 final: single newly generated hero, exact intrinsic aspect ratio, no stretching */
+#home .hero{background-image:url('hero-v11.jpg')!important;aspect-ratio:1651 / 953!important;height:auto!important;background-size:100% 100%!important;background-position:center!important;background-repeat:no-repeat!important;background-color:transparent!important;}
